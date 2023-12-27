@@ -18,7 +18,13 @@ const Stack = createNativeStackNavigator<SharedElementStackParamList>();
 const StackNavigator = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Tab" component={TabNavigator} />
+      <Stack.Screen
+        options={{
+          headerShown: false,
+        }}
+        name="Tab"
+        component={TabNavigator}
+      />
       <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="Login" component={LoginForm} />
       <Stack.Screen name="Signup" component={SignupScreen} />

@@ -57,7 +57,7 @@ const SearchScreen = (props: Props) => {
       clickedCoordinate.latitude,
       clickedCoordinate.longitude
     );
-
+    
     // Show the add marker button
     setIsClicked(true);
   };

@@ -1,19 +1,19 @@
-import { StatusBar, StyleSheet, View } from "react-native";
 import React from "react";
-import { Button, Text } from "react-native-paper";
+import { View, Image } from "react-native";
+import { Card, Title, Paragraph } from "react-native-paper";
 
-type Props = {};
-
-const HomeScreen = (props: Props) => {
+const HomeScreen = () => {
   return (
-    <View style={styles.container}>
-      <Text>home</Text>
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+      <Card>
+        <Card.Cover source={require("../assets/images/travel.jpg")} />
+        <Card.Content>
+          <Title>Welcome!</Title>
+          <Paragraph>This is a simple home screen.</Paragraph>
+        </Card.Content>
+      </Card>
     </View>
   );
 };
 
 export default HomeScreen;
-
-const styles = StyleSheet.create({
-  container: { flex: 1, marginTop: StatusBar.currentHeight },
-});

@@ -29,11 +29,9 @@ const TabNavigator = () => {
       />
       <Tab.Screen
         name="Account"
-        component={AccountScreen}        
+        component={AccountScreen}
         options={{ tabBarIcon: "account" }}
-
       />
-    
     </Tab.Navigator>
   );
 };

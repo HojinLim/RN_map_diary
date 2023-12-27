@@ -5,9 +5,6 @@ export const moveToMarker = (
   latitude: number,
   longitude: number
 ) => {
-  // const selectedMarker = markers[markerIndex];
-  // if (mapRef.current) {
-
   mapref.current?.animateToRegion(
     {
       latitude: latitude,

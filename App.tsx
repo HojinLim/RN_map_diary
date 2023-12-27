@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { activateKeepAwakeAsync } from "expo-keep-awake";
 
 import StackNavigator from "./src/navigation/StackNavigator";
+import { PaperProvider } from "react-native-paper";
 
 export default function App() {
   useEffect(() => {
@@ -11,9 +12,11 @@ export default function App() {
   }, []);
 
   return (
+    <PaperProvider>
     <NavigationContainer>
       <StackNavigator />
     </NavigationContainer>
+    </PaperProvider>
   );
 }
 
