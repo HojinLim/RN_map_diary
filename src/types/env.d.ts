@@ -1,4 +1,4 @@
 declare module "@env" {
-    export const MAP_KEY: string;
+    export const GOOGLE_MAP_KEY: string;
     
   }

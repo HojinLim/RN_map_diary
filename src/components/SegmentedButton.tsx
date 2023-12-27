@@ -14,8 +14,8 @@ const SegmentedButton = (props: Props) => {
         onValueChange={setValue}
         buttons={[
           {
-            value: "walk",
-            label: "Walking",
+            value: "추억의 장소",
+            label: "추억의 장소",
           },
           {
             value: "train",
