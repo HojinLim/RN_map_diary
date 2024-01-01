@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">RN_CLI_map_diary</string>
+    <string name="GOOGLE_MAPS_API_KEY">@string/google_maps_api_key</string>
 </resources>
+
+
